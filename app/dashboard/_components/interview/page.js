@@ -22,6 +22,12 @@ export default function InterviewButton() {
             Post Interview Experience
           </button>
           </Link>
+          <br /><br />
+          <Link href='/dashboard/queries'>
+          <button className="bg-slate-600 text-white px-8 py-3 rounded-lg shadow-md -ml-4">
+            Ask your queries/doubt
+          </button>
+          </Link>
         </div>
       </div>
       <div className="w-1/2">

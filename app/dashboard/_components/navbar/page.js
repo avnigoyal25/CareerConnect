@@ -76,6 +76,9 @@ export default function Navbar() {
           <Link href="/dashboard/analytics_dashboard" className="text-black hover:text-blue-500">
             Analytics Dashboard
           </Link>
+          <Link href="/dashboard/roadmap" className="text-black hover:text-blue-500">
+            Personalized Roadmap
+          </Link>
 
           {/* Profile Dropdown */}
           <div className="relative flex items-center space-x-4">
@@ -90,7 +93,7 @@ export default function Navbar() {
               />
             </button>
             {isProfileDropdownOpen && (
-              <div className="absolute right-0 bg-white text-black mt-2 py-2 w-48 shadow-lg rounded z-50">
+              <div className="absolute right-0 bg-white text-black mt-32 py-2 w-48 shadow-lg rounded z-50">
                 <Link
                   href="/dashboard/user-profile"
                   className="block px-4 py-2 hover:bg-gray-200"

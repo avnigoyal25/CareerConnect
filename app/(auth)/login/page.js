@@ -212,7 +212,7 @@ export default function AuthPage() {
 
             {!isSignup ? (
               <>
-                <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-green-400">Log in to CareerConnect</h2>
+                <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-green-400">Log in to PathBridge</h2>
                 <form onSubmit={handleSubmit(handleFormSubmit)}>
                   <div className="mb-4">
                     <label className="block text-sm font-medium text-gray-700">

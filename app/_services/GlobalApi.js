@@ -45,6 +45,35 @@ const Predict = async(file) => {
     });
 };
 
+const PostQuery = (data, token) => {
+    return axios.post('/api/postQuery', data, {
+        headers: {
+            Authorization: `Bearer ${token}`,
+        },
+    });
+};
+
+const GetAllQueries = () => {
+    return axios.get('/api/getAllQueries');
+};
+
+const PostReply = (queryId, message, token) => {
+    return axios.post(`/api/postReply/${queryId}`, { message }, {
+        headers: {
+            Authorization: `Bearer ${token}`,
+        },
+    });
+};
+
+const GenerateCareerRoadmap = (formData, token) => {
+    return axios.post('/api/career-roadmap', { formData }, {
+        headers: {
+            Authorization: `Bearer ${token}`,
+        },
+    });
+};
+
+
 export default {
     postInterview,
     getCompany,
@@ -56,5 +85,9 @@ export default {
     UpdateUser,
     FetchSkills,
     FetchPackage,
-    Predict
+    Predict,
+    PostQuery,
+    GetAllQueries,
+    PostReply,
+    GenerateCareerRoadmap
 }

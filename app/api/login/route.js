@@ -6,7 +6,6 @@ import { eq } from 'drizzle-orm';
 import jwt from 'jsonwebtoken';
 
 export async function POST(req) {
-  console.log('got2')
   try {
     const data = await req.json();
     const email=data.email;
